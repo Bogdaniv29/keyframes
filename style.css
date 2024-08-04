@@ -1,0 +1,28 @@
+.box {
+animation-name: animate;
+color: blue;
+width: 100px;
+height: 100px;
+border-radius: 10px;
+background-color: #ff4c4c;
+box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes animate {
+0% {
+    transform: scale(1);
+}
+25% {
+    transform: scale(1.25);
+}
+50% {
+    transform: scale(1.50);
+}
+75% {
+    transform: scale(1.75);
+}
+100% {
+    transform: scale(2);
+}
+}
