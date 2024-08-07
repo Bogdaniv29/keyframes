@@ -1,28 +1,41 @@
+/* .container {
+  width: 600px;
+  height: 600px;
+  outline: 1px solid black;
+} */
+
 .box {
-animation-name: animate;
-color: blue;
-width: 100px;
-height: 100px;
-border-radius: 10px;
-background-color: #ff4c4c;
-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  animation-name: animate;
+  animation-duration:  5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #ff4c4c;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 @keyframes animate {
-0% {
-    transform: scale(1);
-}
-25% {
-    transform: scale(1.25);
-}
-50% {
-    transform: scale(1.50);
-}
-75% {
-    transform: scale(1.75);
-}
-100% {
-    transform: scale(2);
-}
+  0% {
+    transform: translate(0);
+    background-color: blue;
+  }
+  25% {
+    transform: translate(0, 100%);
+    background-color: rgb(255, 197, 197);
+  }
+  50% {
+    transform: translate(100%, 100%);
+    background-color: yellow;
+  }
+  75% {
+    transform: translate(100%, 0);
+    background-color: red;
+  }
+  100% {
+    transform: translate(0);
+    background-color: rgb(132, 255, 0);
+  }
 }
